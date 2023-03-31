@@ -8,6 +8,7 @@ This is source code for my Codecademy Project: Personal Portfolio Website ( Fron
 - Git
 - GitHub
 - Command Line
+- Bulma
 
 ## Contact
 If you would like to get in touch with me, please feel free to email me at thiflan120699@gmail.com.
