@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Thiflan Silmi Kaffah</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/ba9c22dcfd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- START NAV -->
+
+  <nav class="navbar is-fixed-top is-transparent" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a href="./index.html" class="navbar-item">
+        <img class="fa-mf-logo has-text-primary fa-4x" src="thiflan-avatar.png" alt="avatar">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+
+    </div>
+    <div class="navbar-menu is-shadowless" id="navMenu">
+      <div class="navbar-start"></div>
+      <div class="navigation-items navbar-end">
+        <a class="navbar-item has-text-weight-semibold" href="index.html#about">About Me</a>
+        <a class="navbar-item has-text-weight-semibold" href="index.html#projects">Projects</a>
+        <a class="navbar-item has-text-weight-semibold" href="index.html#skills">Skills</a>
+        <a class="navbar-item has-text-weight-semibold" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- END NAV -->
+
+  <main>
+    <div class="-is-form-page">
+
+      <!-- HEADER NAV -->
+
+      <header class="contact is-white has-text-centered">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Love to Hear
+                from You!</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- END HEADER -->
+
+      <!-- START FORM -->
+
+      <section class="is-white">
+        <div class="container">
+          <form id="contact-form" accept-charset="UTF-8" method="POST">
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <div class="field">
+                  <h5><label for="user_name" class="label">Name</label></h5>
+                  <div class="control is-expanded">
+                    <input id="user_name" placeholder="Enter your name" class="input is-large" name="name" type="text"
+                      required="">
+                  </div>
+                </div>
+              </div>
+              <div class="column is-half">
+                <div class="field">
+                  <h5><label for="user_email" class="label">Email</label></h5>
+                  <div class="control is-expanded">
+                    <input id="user_email" placeholder="Enter your email address" class="input is-large" name="email"
+                      type="email" required="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column">
+                <div class="field">
+                  <h5><label for="message" class="label">Message</label></h5>
+                  <div class="control is-expanded">
+                    <textarea placeholder="Your message..." id="message" class="textarea is-large" name="message"
+                      rows="5" required=""></textarea>
+                  </div>
+                </div>
+                <div class="field is-hidden">
+                  <label class="is-hidden"></label>
+                  <div class="control is-expanded is-hidden">
+                    <input class="is-hidden" name="bot_vortex" type="hidden">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columns is-centered">
+              <div class="column is-one-third">
+                <div class="field">
+                  <div class="control">
+                    <button class="button is-outlined is-medium is-fullwidth is-rounded">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      <!-- END FORM -->
+      
+    </div>
+  </main>
+
+  <!-- START FOOTER -->
+
+  <footer id="footer" class="section is-small has-text-centered">
+
+    <div class="container is-narrow">
+      <h1 class="title is-size-4-touch has-text-weight-normal">Living, learning, &amp; leveling up one day at a
+        time.</h1>
+      <div class="social-icons">
+        <a class="is-medium" id="linkedin" href="https://www.linkedin.com/in/thiflan-s-28776611b/" target="_blank"><i
+            class="fab fa-linkedin"> LinkedIn</i></a>
+        <a class="is-medium" id="github" href="https://github.com/remainhumble" target="_blank"><i
+            class="fab fa-github"> GitHub</i></a>
+        <a class="is-medium" href="mailto:thiflan120699@gmail.com"><i class="fa-sharp fa-regular fa-envelope">
+            Email</i></a>
+      </div>
+      <p class="copyright text-center">Handcrafted by me &copy; twenty twenty three</p>
+    </div>
+  </footer>
+
+  <!-- END FOOTER -->
+
+  <script src="scripts/script.js" defer></script>
+</body>
+
+</html>

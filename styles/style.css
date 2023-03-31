@@ -1,0 +1,222 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --main-blue: #141c3a;
+    --main-gray: #4a4a4a;
+    --main-white: #fff;
+    --main-red: #800000;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    padding: 18px 0;
+    display: block;
+    color: var(--main-blue);
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+/* Nav Section */
+
+.navbar {
+    padding: 1rem 0;
+}
+
+nav.navbar {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#navMenu {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.fa-4x {
+    margin-left: 1rem;
+}
+
+/* Hero Section */
+
+#hero {
+    background-image: url("coronetpeaksunset.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.hero {
+    padding-top: 8rem;
+}
+
+
+#hero .title,
+#hero .subtitle {
+    color: var(--main-blue);
+    font-family: Tahoma;
+}
+
+.has-text-centered {
+    text-align: center !important;
+}
+
+/* Avatar Section */
+
+.section.call-to-action {
+    padding: 5rem 1.5rem 2rem;
+}
+
+.container.is-narrow {
+    max-width: 1200px;
+}
+
+.section.call-to-action .me {
+    margin-top: -16rem;
+}
+
+@media screen and (min-width: 769px)
+.avatar {
+    width: 210px;
+}
+
+.avatar {
+    margin: 2rem 0;
+    width: 270px;
+    border-radius: 500px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    color: #4a4a4a;
+}
+
+/* Projects Section */
+
+.project-link {
+    color: var(--main-gray);
+}
+
+#projects .title {
+    color: var(--main-blue);
+}
+
+.project-title {
+    font-weight: bolder;
+    font-size: larger;
+    margin: 1rem;
+}
+
+/* Skills Section */
+
+#skills .title {
+    color: var(--main-blue);
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+#skills-container>* {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+}
+
+
+
+/* Contact Section */
+
+.contact {
+    padding: 11rem 0 6rem 0;
+}
+
+.is-white .container {
+    padding: 0 20px;
+}
+
+.button.is-outlined {
+    background-color: transparent;
+    border-color: var(--main-red);
+    color: var(--main-red);
+    border-width: 2px;
+}
+
+.button.is-outlined:hover,
+.button.is-outlined.is-hovered,
+.button.is-outlined:focus,
+.button.is-outlined.is-focused {
+    background-color: var(--main-red);
+    border-color: var(--main-red);
+    color: var(--main-white);
+}
+
+/* Footer Section */
+
+footer {
+    background-color: var(--main-red);
+}
+
+footer .title {
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    max-width: 300px;
+    opacity: 0.8;
+}
+
+footer .copyright {
+    color: white;
+}
+
+footer .social-icons a.is-medium {
+    padding: 1.5em;
+}
+
+footer .social-icons {
+    margin-bottom: 2rem;
+}
+
+#footer h1 {
+    color: #fff;
+}
+
+#linkedin {
+    color: #0072b1;
+}
+
+#linkedin:hover {
+    color: #004182;
+}
+
+#github {
+    color: #171515
+}
+
+#github:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
