@@ -10,4 +10,5 @@ This is source code for my Codecademy Project: Personal Portfolio Website ( Fron
 *Command Line
 
 ## Contact
-If you would like to get in touch with me, please feel free to email me at thiflan120699@gmail.com.\Thank you for taking the time to view my portfolio!
+If you would like to get in touch with me, please feel free to email me at thiflan120699@gmail.com.
+Thank you for taking the time to view my portfolio!
