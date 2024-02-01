@@ -1,11 +1,14 @@
+/* Import Bulma CSS framework */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
+/* Reset default styles and set default font */
 * {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
 
+/* Define custom CSS variables */
 :root {
   --main-blue: #141c3a;
   --main-gray: #4a4a4a;
@@ -13,28 +16,33 @@
   --main-red: #800000;
 }
 
+/* Styles for HTML */
 html {
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
+/* Styles for body */
 body {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
 }
 
+/* Main section styles */
 main {
   flex: 1;
 }
 
+/* Section styles */
 section {
   padding: 18px 0;
   display: block;
   color: var(--main-blue);
 }
 
+/* Container styles */
 .container {
   flex-grow: 1;
   margin: 0 auto;
@@ -42,72 +50,82 @@ section {
   width: auto;
 }
 
-/* Nav Section */
-
+/* Navbar styles */
+/* Navbar padding and background */
 .navbar {
   padding: 1rem 0;
 }
 
+/* Transparent background for navbar */
 nav.navbar {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
+/* Transparent background for nav menu */
 #navMenu {
   background-color: rgba(255, 255, 255, 0);
 }
 
+/* Avatar image size */
 .fa-4x {
   margin-left: 1rem;
 }
 
-/* Hero Section */
-
+/* Hero section styles */
 #hero {
   background-image: url("coronetpeaksunset.jpg");
   background-size: cover;
   height: 500px;
   width: 100%;
-    padding-top: 8rem;
+  padding-top: 8rem;
 }
 
+/* Title and subtitle colors in hero section */
 #hero .title,
 #hero .subtitle {
   color: var(--main-blue);
   font-family: Tahoma;
 }
 
+/* Media query for larger screens */
 @media screen and (min-width: 375px) {
-    #hero .title,
-#hero .subtitle {
-  color: var(--main-white);
-  font-family: Tahoma;
-}
+  /* Adjust title and subtitle colors */
+  #hero .title,
+  #hero .subtitle {
+    color: var(--main-white);
+    font-family: Tahoma;
+  }
 }
 
+/* Center-aligned text */
 .has-text-centered {
   text-align: center !important;
 }
 
-/* Avatar Section */
-
+/* Avatar section styles */
 .section.call-to-action {
   padding: 5rem 1.5rem 2rem;
 }
 
+/* Container width for narrow screens */
 .container.is-narrow {
   max-width: 1200px;
 }
 
+/* Avatar image margin and size */
 .section.call-to-action .me {
   margin-top: -16rem;
 }
 
+/* Media query for larger screens */
 @media screen and (min-width: 375px) {
+  /* Adjust avatar width */
   .avatar {
     width: 210px;
   }
 }
 
+/* Avatar image styles */
 .avatar {
   margin: 2rem 0;
   width: 270px;
@@ -117,28 +135,30 @@ nav.navbar {
   color: #4a4a4a;
 }
 
-/* Projects Section */
-
+/* Project section styles */
 .project-link {
   color: var(--main-gray);
 }
 
+/* Project title styles */
 #projects .title {
   color: var(--main-blue);
 }
 
+/* Project title font weight and size */
 .project-title {
   font-weight: bolder;
   font-size: larger;
   margin: 1rem;
 }
 
-/* Skills Section */
-
+/* Skills section styles */
+/* Skills title color */
 #skills .title {
   color: var(--main-blue);
 }
 
+/* Skills container styles */
 #skills-container {
   display: flex;
   width: 100%;
@@ -147,12 +167,15 @@ nav.navbar {
   padding: 3rem 0;
 }
 
+/* Individual skill icon styles */
 #skills-container > * {
   font-size: 2em;
   width: 2em;
 }
 
+/* Media query for larger screens */
 @media screen and (min-width: 375px) {
+  /* Adjust margin, height, width, and font size */
   #skills-container > * {
     margin: 0 0.2rem;
     height: 2.9375rem;
@@ -161,16 +184,17 @@ nav.navbar {
   }
 }
 
-/* Contact Section */
-
+/* Contact section styles */
 .contact {
   padding: 11rem 0 6rem 0;
 }
 
+/* Adjust container padding for white backgrounds */
 .is-white .container {
   padding: 0 20px;
 }
 
+/* Outline button styles */
 .button.is-outlined {
   background-color: transparent;
   border-color: var(--main-red);
@@ -178,6 +202,7 @@ nav.navbar {
   border-width: 2px;
 }
 
+/* Hover and focus styles for outline buttons */
 .button.is-outlined:hover,
 .button.is-outlined.is-hovered,
 .button.is-outlined:focus,
@@ -187,12 +212,12 @@ nav.navbar {
   color: var(--main-white);
 }
 
-/* Footer Section */
-
+/* Footer section styles */
 footer {
   background-color: var(--main-red);
 }
 
+/* Footer title styles */
 footer .title {
   font-size: 1.6rem;
   margin: 2rem auto;
@@ -200,34 +225,42 @@ footer .title {
   opacity: 0.8;
 }
 
+/* Copyright text color */
 footer .copyright {
   color: white;
 }
 
+/* Social media icon styles */
 footer .social-icons a.is-medium {
   padding: 1.5em;
 }
 
+/* Margin for social media icons */
 footer .social-icons {
   margin-bottom: 2rem;
 }
 
+/* Footer h1 styles */
 #footer h1 {
   color: #fff;
 }
 
+/* LinkedIn link color */
 #linkedin {
   color: #0072b1;
 }
 
+/* Hover color for LinkedIn link */
 #linkedin:hover {
   color: #004182;
 }
 
+/* GitHub link color */
 #github {
   color: #171515;
 }
 
+/* Hover color for GitHub link */
 #github:hover {
   color: rgba(255, 255, 255, 0.7);
 }
