@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>Interactive Slideshow</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to Google Fonts for Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Individual slides with images and captions -->
+      <div class="mySlides fade">
+        <img src="img/cake-raffle.png" />
+        <h2>Cake Raffle</h2>
+        <div class="description">
+          <p>A simple web application designed to facilitate a raffle where participants can enter their names for a chance to win a cake allowing users to enter their names, displays the list of participants, randomly selects a winner, and provides an option to reset the raffle for a new round.</p>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/expense-tracker.png" />
+        <h2>Expense Tracker</h2>
+        <div class="description">
+          <p>An  engaging and interactive experience for inviting users to an event, specifically the GIF Gala: Where Memes Come To Life!</p>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/facebomp.png" />
+        <h2>Facebomp</h2>
+        <div class="description">
+          <p>A simple browser-based game where players need to click on popping-up photos within a limited time to earn points.</p>
+        </div>
+      </div>
+
+      <!-- Navigation buttons for previous and next slides -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Dots for slide navigation -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Script tag for slide navigation functions -->
+    <script src="script.js"></script>
+  </body>
+</html>

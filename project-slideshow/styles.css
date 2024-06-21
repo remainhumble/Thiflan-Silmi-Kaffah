@@ -1,0 +1,162 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Set font to Roboto */
+  letter-spacing: 1px; /* Add letter-spacing */
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  max-width: 800px; /* Set max width */
+  position: relative;
+  margin: 200px auto 0; /* Center the container */
+  overflow: hidden;
+  border-radius: 40px; /* Rounded corners */
+}  
+
+/* Individual Slides */
+.mySlides {
+  display: flex;
+  width: 100%;
+  transition: opacity 1s, background-color 1s; /* Transitions */
+  position: relative;
+}
+
+/* Caption for Slides */
+.mySlides h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 26px; /* Font size */
+  padding: 10px 15px;
+  position: absolute;
+  top: 30%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+  text-align: center;
+  z-index: 2;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  opacity: 0; /* Hidden by default */
+}
+
+/* Slide description */
+.mySlides > .description {
+  color: #fff;
+  font-size: 16px; /* Font size */
+  padding: 10px 15px;
+  position: absolute;
+  top: 70%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering trick */
+  text-align: center;
+  z-index: 2;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  opacity: 0; /* Hidden by default */
+}
+
+.mySlides:hover .description {
+  opacity: 1;
+}
+
+
+/* Show caption on hover */
+.mySlides:hover h2 {
+  opacity: 1;
+}
+
+/* Hover effect for slides */
+.mySlides:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Overlay for slides */
+.mySlides::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 1s;
+  z-index: 1;
+}
+
+/* Show overlay on hover */
+.mySlides:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Images within slides */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  z-index: 3;
+}
+
+/* Position next button */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Hover effect for navigation buttons */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Navigation Dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 15px 5px 0; /* Adjusted margin */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Active dot and hover effect */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading Animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Keyframes for fade animation */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
